@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="index.js"></script>
     <title>Adesanya & Partners</title>
   </head>
   <body>
@@ -12,10 +17,10 @@
       <h1 class="nav__logo">Adesanya & Partners</h1>
 
       <ul class="nav__links">
-        <li class="nav__link-wrapper"><a href="/" class="nav__link">Home</a></li>
-        <li class="nav__link-wrapper"><a href="/" class="nav__link">About Us</a></li>
-        <li class="nav__link-wrapper"><a href="/" class="nav__link">Services</a></li>
-        <li class="nav__link-wrapper"><a href="/" class="nav__link">Let's Talk</a></li>
+        <li class="nav__link-wrapper"><a href="#" class="nav__link">Home</a></li>
+        <li class="nav__link-wrapper"><a href="#about" class="nav__link">About Us</a></li>
+        <li class="nav__link-wrapper"><a href="#services" class="nav__link">Services</a></li>
+        <li class="nav__link-wrapper"><a href="#contact" class="nav__link">Let's Talk</a></li>
       </ul>
 
       <div class="mobile-nav" id="mobile-nav">
@@ -49,21 +54,21 @@
         <ul class="mobile-nav__links mobile-nav__links--hidden">
           <li class="mobile-nav__link-wrapper"><a href="/" class="mobile-nav__link">Home</a></li>
           <li class="mobile-nav__link-wrapper">
-            <a href="/" class="mobile-nav__link">About Us</a>
+            <a href="#about" class="mobile-nav__link">About Us</a>
           </li>
           <li class="mobile-nav__link-wrapper">
-            <a href="/" class="mobile-nav__link">Services</a>
+            <a href="#services" class="mobile-nav__link">Services</a>
           </li>
           <li class="mobile-nav__link-wrapper">
-            <a href="/" class="mobile-nav__link">Let's Talk</a>
+            <a href="#contact" class="mobile-nav__link">Let's Talk</a>
           </li>
         </ul>
       </div>
     </nav>
 
-    <main>
+    <main class="main-wrapper">
       <!-- HERO SECTION -->
-      <section class="hero">
+      <section class="hero" id="hero">
         <div class="hero__content-wrapper">
           <h1 class="hero__heading">Your Strategic Partner for Financial Success.</h1>
           <h2 class="hero__subheading">
@@ -74,11 +79,11 @@
       </section>
 
       <!-- ABOUT SECTION -->
-      <section class="about">
+      <section class="about" id="about">
         <div class="about__content-wrapper">
           <h2 class="about__heading">About Us</h2>
           <p class="about__text">
-            At [Your Accountancy Firm Name], we're dedicated to providing exceptional financial
+            At Adesanya & Partners, we're dedicated to providing exceptional financial
             services tailored to meet your unique needs. With our team of experienced accountants
             and personalized approach, we strive to exceed your expectations and help you achieve
             your financial goals.
@@ -92,7 +97,7 @@
       </section>
 
       <!-- BENEFITS SECTION -->
-      <section class="benefits">
+      <section class="benefits" id="benefits">
         <h2 class="benefits__heading">Why Us?</h2>
         <ul class="benefits__list">
           <li class="benefits__item">
@@ -150,7 +155,7 @@
       </section>
 
       <!-- SERVICES SECTION -->
-      <section class="services">
+      <section class="services" id="services">
         <h2 class="services__heading">Our Services</h2>
         <ul class="services__list">
           <li class="services__item">
@@ -344,7 +349,7 @@
       </section>
 
       <!-- CONTACT SECTION -->
-      <section class="contact">
+      <section class="contact" id="contact">
         <h2 class="contact__heading">We would love to hear from you</h2>
         <ul class="contact__details">
           <li class="contact__item">
@@ -412,7 +417,5 @@
     <footer class="footer">
       <p class="footer__text">&copy; 2024 Adesanya & Partners</p>
     </footer>
-
-    <script src="index.js"></script>
   </body>
 </html>

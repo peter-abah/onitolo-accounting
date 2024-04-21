@@ -64,6 +64,10 @@ body {
     Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* NAV */
 .nav {
   display: flex;
